@@ -1,0 +1,11 @@
+
+State Machine - |pipeline|alu:ALU|state
+Name state.M5 state.M4 state.M3 state.M2 state.M1 state.AS2 state.AS1 state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 
+state.AS1 0 0 0 0 0 0 1 1 
+state.AS2 0 0 0 0 0 1 0 1 
+state.M1 0 0 0 0 1 0 0 1 
+state.M2 0 0 0 1 0 0 0 1 
+state.M3 0 0 1 0 0 0 0 1 
+state.M4 0 1 0 0 0 0 0 1 
+state.M5 1 0 0 0 0 0 0 1 

@@ -1,0 +1,78 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do ALU_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/ALU {C:/altera/13.0sp1/ALU/macros.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# vlog -vlog01compat -work work +incdir+F:/Downloads/files\ (2) {F:/Downloads/files (2)/pipeline.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pipeline
+# 
+# Top level modules:
+# 	pipeline
+# vlog -vlog01compat -work work +incdir+F:/Downloads/files\ (2) {F:/Downloads/files (2)/mul.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mul
+# 
+# Top level modules:
+# 	mul
+# vlog -vlog01compat -work work +incdir+F:/Downloads/files\ (2) {F:/Downloads/files (2)/memory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# vlog -vlog01compat -work work +incdir+F:/Downloads/files\ (2) {F:/Downloads/files (2)/inst_fetch.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module inst_fetch
+# 
+# Top level modules:
+# 	inst_fetch
+# vlog -vlog01compat -work work +incdir+F:/Downloads/files\ (2) {F:/Downloads/files (2)/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -vlog01compat -work work +incdir+F:/Downloads/files\ (2) {F:/Downloads/files (2)/addsub.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module addsub
+# 
+# Top level modules:
+# 	addsub
+# 
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/ALU {C:/altera/13.0sp1/ALU/alu_TB.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu_TB
+# 
+# Top level modules:
+# 	alu_TB
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  alu_TB
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps alu_TB 
+# Loading work.alu_TB
+# Loading work.alu
+# Loading work.mul
+# Loading work.addsub
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# op=00  (3, 4)  ?  (1, 2)  =  (4, 6)
+# op=01  (3, 4)  ?  (1, 2)  =  (2, 2)
+# op=10  (3, 4)  ?  (1, 2)  =  (-5, 10)
+# op=00  (-7, 5)  ?  (7, -5)  =  (0, 0)
+# Break in Module alu_TB at C:/altera/13.0sp1/ALU/alu_TB.v line 38
+# Simulation Breakpoint: Break in Module alu_TB at C:/altera/13.0sp1/ALU/alu_TB.v line 38
+# MACRO ./ALU_run_msim_rtl_verilog.do PAUSED at line 23

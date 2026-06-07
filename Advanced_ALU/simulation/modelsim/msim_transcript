@@ -1,0 +1,107 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do pipeline_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/ALU_2 {C:/altera/13.0sp1/ALU_2/macros.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/ALU_2 {C:/altera/13.0sp1/ALU_2/pipeline.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pipeline
+# 
+# Top level modules:
+# 	pipeline
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/ALU_2 {C:/altera/13.0sp1/ALU_2/inst_fetch.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module inst_fetch
+# 
+# Top level modules:
+# 	inst_fetch
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/ALU_2 {C:/altera/13.0sp1/ALU_2/memory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/ALU_2 {C:/altera/13.0sp1/ALU_2/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/ALU_2 {C:/altera/13.0sp1/ALU_2/mul.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mul
+# 
+# Top level modules:
+# 	mul
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/ALU_2 {C:/altera/13.0sp1/ALU_2/addsub.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module addsub
+# 
+# Top level modules:
+# 	addsub
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/ALU_2 {C:/altera/13.0sp1/ALU_2/divider.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# 
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/ALU_2 {C:/altera/13.0sp1/ALU_2/pipeline_TB.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pipeline_TB
+# 
+# Top level modules:
+# 	pipeline_TB
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  pipeline_TB
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps pipeline_TB 
+# Loading work.pipeline_TB
+# Loading work.pipeline
+# Loading work.inst_fetch
+# Loading work.memory
+# Loading work.alu
+# Loading work.mul
+# Loading work.addsub
+# Loading work.divider
+# ** Warning: (vsim-3017) C:/altera/13.0sp1/ALU_2/pipeline.v(32): [TFMPC] - Too few port connections. Expected 8, found 7.
+# 
+#         Region: /pipeline_TB/PIPELINE/IF
+# ** Warning: (vsim-3722) C:/altera/13.0sp1/ALU_2/pipeline.v(32): [TFMPC] - Missing connection for port 'pc_out'.
+# 
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#120  WB  mem[2] <= (4, 6)   (op=000, a=(3,4), b=(1,2))
+#200  WB  mem[3] <= (2, 2)   (op=001, a=(3,4), b=(1,2))
+#340  WB  mem[4] <= (-5, 10)   (op=010, a=(3,4), b=(1,2))
+#560  WB  mem[5] <= (5, 5)   (op=011, a=(10,10), b=(2,0))
+#660  WB  mem[8] <= (25, 0)   (op=100, a=(3,4), b=(3,4))
+#740  WB  mem[31] <= (6, 8)   (op=000, a=(3,4), b=(3,4))
+#820  WB  mem[31] <= (6, 8)   (op=000, a=(3,4), b=(3,4))
+# ---- final memory ----
+# mem[0] = (3, 4)
+# mem[1] = (1, 2)
+# mem[2] = (4, 6)
+# mem[3] = (2, 2)
+# mem[4] = (-5, 10)
+# mem[5] = (5, 5)
+# mem[6] = (10, 10)
+# mem[7] = (2, 0)
+# mem[8] = (25, 0)
+# Break in Module pipeline_TB at C:/altera/13.0sp1/ALU_2/pipeline_TB.v line 26
+# Simulation Breakpoint: Break in Module pipeline_TB at C:/altera/13.0sp1/ALU_2/pipeline_TB.v line 26
+# MACRO ./pipeline_run_msim_rtl_verilog.do PAUSED at line 24
+# Break key hit 

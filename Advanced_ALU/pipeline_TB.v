@@ -1,0 +1,29 @@
+`include "macros.v"
+
+module pipeline_TB ();
+
+reg  rstN = 0, clk = 1;
+wire [17:0] LEDR;
+wire [8:0]  LEDG;
+pipeline PIPELINE(clk, rstN);
+
+always #10 clk = ~clk;
+initial begin
+    $readmemb("data/inst_mem.txt",    PIPELINE.IF.mem);
+    $readmemb("data/initial_mem.txt", PIPELINE.MEM.mem);
+
+    #25 rstN = 1;
+    #800;
+
+    $display("---- final memory ----");
+    begin : dump
+        integer i;
+        for (i = 0; i < 9; i = i + 1)
+            $display("mem[%0d] = (%0d, %0d)", i,
+                `sRe(PIPELINE.MEM.mem[i]), `sIm(PIPELINE.MEM.mem[i]));
+    end
+    $writememb("data/final_mem.txt", PIPELINE.MEM.mem);
+    $stop;
+end
+
+endmodule

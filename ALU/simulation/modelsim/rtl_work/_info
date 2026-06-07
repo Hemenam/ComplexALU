@@ -1,0 +1,146 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\ALU\simulation\modelsim
+vaddsub
+IIO6=j55Je2WSZKEj_8[PZ3
+VKgJJ>BMJM`ED=E[m5MF?J2
+Z1 dC:\altera\13.0sp1\ALU\simulation\modelsim
+Z2 w1780592667
+8F:/Downloads/files (2)/addsub.v
+FF:/Downloads/files (2)/addsub.v
+L0 6
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-vlog01compat -work work -O0
+Z5 !s92 -vlog01compat -work work {+incdir+F:/Downloads/files (2)} -O0
+!i10b 1
+!s100 Aj[@KnnGmH3GzIfA5@MGC0
+!s85 0
+!s108 1780610890.235000
+!s107 F:/Downloads/files (2)/macros.v|F:/Downloads/files (2)/addsub.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/Downloads/files (2)|F:/Downloads/files (2)/addsub.v|
+!s101 -O0
+valu
+IHk`M=zl27NMO7oLBZzSmW3
+V:MJ]N0dzHBOWA5LB0TA?X0
+R1
+R2
+8F:/Downloads/files (2)/alu.v
+FF:/Downloads/files (2)/alu.v
+L0 16
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 I:[GIRHQXZ_P]fPK2eg9E1
+!s85 0
+!s108 1780610890.203000
+!s107 F:/Downloads/files (2)/macros.v|F:/Downloads/files (2)/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/Downloads/files (2)|F:/Downloads/files (2)/alu.v|
+!s101 -O0
+valu_TB
+!i10b 1
+!s100 Y:YhFPUzlT5X?oiY@A^Ej2
+IKh3inSTVAD0ia3AMYQg3W2
+V>BaO050@GIH2MI6e``Nh51
+R1
+w1780607097
+8C:/altera/13.0sp1/ALU/alu_TB.v
+FC:/altera/13.0sp1/ALU/alu_TB.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1780610890.272000
+!s107 C:/altera/13.0sp1/ALU/macros.v|C:/altera/13.0sp1/ALU/alu_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0sp1/ALU|C:/altera/13.0sp1/ALU/alu_TB.v|
+!s101 -O0
+R4
+!s92 -vlog01compat -work work +incdir+C:/altera/13.0sp1/ALU -O0
+nalu_@t@b
+vinst_fetch
+I4dk_?n@HF?DIK156o[FCa0
+V=3D@zG<j1AW7mPk:D_YRi3
+R1
+R2
+8F:/Downloads/files (2)/inst_fetch.v
+FF:/Downloads/files (2)/inst_fetch.v
+L0 11
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 ZE5<><_Fg4cTZne[eeUW^3
+!s85 0
+!s108 1780610890.170000
+!s107 F:/Downloads/files (2)/macros.v|F:/Downloads/files (2)/inst_fetch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/Downloads/files (2)|F:/Downloads/files (2)/inst_fetch.v|
+!s101 -O0
+vmemory
+IeYCGKza0Knge8GJMkiYIJ0
+VD=e<@L6^`RGa=aaC0b8;?1
+R1
+R2
+8F:/Downloads/files (2)/memory.v
+FF:/Downloads/files (2)/memory.v
+L0 4
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 zcj=z4=zK:cB52AhC;TOg3
+!s85 0
+!s108 1780610890.139000
+!s107 F:/Downloads/files (2)/macros.v|F:/Downloads/files (2)/memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/Downloads/files (2)|F:/Downloads/files (2)/memory.v|
+!s101 -O0
+vmul
+IYO9lDa004X:88^z]I7^T^1
+VT4:<];;7HQJWab_[cRo3I2
+R1
+R2
+8F:/Downloads/files (2)/mul.v
+FF:/Downloads/files (2)/mul.v
+L0 6
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 THzS2l:IJofZL<m30^9R<1
+!s85 0
+!s108 1780610890.106000
+!s107 F:/Downloads/files (2)/macros.v|F:/Downloads/files (2)/mul.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/Downloads/files (2)|F:/Downloads/files (2)/mul.v|
+!s101 -O0
+vpipeline
+ImMoWRZTTNF:0^i7XC0oYS3
+V>0Ll:P2@KcEX`^cgAVS5I1
+R1
+R2
+8F:/Downloads/files (2)/pipeline.v
+FF:/Downloads/files (2)/pipeline.v
+L0 13
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 g0iM`W`j34K5@_lQU;G<W2
+!s85 0
+!s108 1780610890.073000
+!s107 F:/Downloads/files (2)/macros.v|F:/Downloads/files (2)/pipeline.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/Downloads/files (2)|F:/Downloads/files (2)/pipeline.v|
+!s101 -O0
